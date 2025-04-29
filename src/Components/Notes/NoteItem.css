@@ -1,0 +1,76 @@
+.note-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .note-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  
+  .note-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    word-break: break-word;
+  }
+  
+  .note-actions {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #adb5bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  
+  .action-button.active {
+    color: #4a69bd;
+  }
+  
+  .action-button:hover {
+    color: #4a69bd;
+  }
+  
+  .note-content {
+    flex: 1;
+    font-size: 14px;
+    color: #6c757d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 12px;
+  }
+  
+  .note-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #adb5bd;
+  }
+  
+  .note-date {
+    font-style: italic;
+  }
